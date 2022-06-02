@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--....................................-->
+    <!--lINEAR LAYOUT PAI-->
+    <!--....................................-->
+    <LinearLayout
+        android:id="@+id/linearCor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--....................................-->
+        <!--LINEAR INFORMAÇÕES-->
+        <!--....................................-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/txtInf"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/txtInfNameTrip"
+                android:textColor="@color/black"
+                android:textSize="17dp"></TextView>
+
+            <EditText
+                android:id="@+id/txtNameTrip"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black"
+                android:textSize="17dp"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/txtInfPessoas"
+                android:textColor="@color/black"
+                android:textSize="17dp"></TextView>
+
+            <EditText
+                android:id="@+id/txtQtdTravelers"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/txtIndQtdPessoas"
+                android:singleLine="true"
+                android:textColorHint="@color/black"
+                android:textSize="17dp"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/txtInfDuracao"
+                android:textColor="@color/black"
+                android:textSize="17dp"></TextView>
+
+            <EditText
+                android:id="@+id/txtDaysTrip"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="15dp"
+                android:singleLine="true"
+                android:hint="@string/txtDuracaoViajem"
+                android:textColorHint="@color/black"
+                android:textSize="17dp"></EditText>
+        </LinearLayout>
+
+        <!--....................................-->
+        <!--LINEAR HOTEL E REFEIÇÕES-->
+        <!--....................................-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:background="@color/black">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/txtTelaHotAli"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light">
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="@string/txtRefeicao"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="20dp"
+                android:text="@string/txtCustRei"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:layout_marginTop="4dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/indicaCustRei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:hint="@string/txtIndCustRei"
+                android:textColorHint="@color/black"
+                android:singleLine="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="40dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="23dp"
+                android:text="@string/txtQtdRei"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:layout_marginTop="4dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/indicaQtdRei"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/txtIndQtdRei"
+                android:textColorHint="@color/black"
+                android:singleLine="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp"
+                >
+            </EditText>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="@string/txtLine"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="@string/txtHotel"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="@string/txtCustoMedioN"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:layout_marginTop="4dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/indicaCustoMedioN"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/txtIndCustoMedioN"
+                android:textColorHint="@color/black"
+                android:singleLine="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="40dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:text="@string/txtQtdNoites"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:layout_marginTop="4dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/indicaQtdnoites"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/txtIndQtdnoites"
+                android:textColorHint="@color/black"
+                android:singleLine="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:text="@string/txtQtdQuartos"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                android:layout_marginTop="4dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/indicaQtdQuartos"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/txtIndQtdQuartos"
+                android:textColorHint="@color/black"
+                android:singleLine="true"
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="80dp">
+            </EditText>
+        </LinearLayout>
+
+        <!--....................................-->
+        <!--LINEAR COMBUSTIVEL E PASSAGEM-->
+        <!--....................................-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/txtTelacombpass"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-light">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="@string/txtGasolina"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:text="@string/txtKm"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="4dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/indicaKm"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:hint="@string/txtEstimatedKm"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="40dp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:text="@string/txtKml"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="4dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/indicaKml"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:hint="@string/txtIndKML"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:text="@string/txtCustoL"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="4dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/indicaCustoL"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:hint="@string/txtCustoMedioL"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:text="@string/txtQtdVei"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="4dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/indicaQtdVei"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:hint="@string/txtQtdTotalVei"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="50dp">
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/txtLine"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="18dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="@string/txtPassagem"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/txtLine"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="18dp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="20dp"
+                    android:text="@string/txtPess"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="4dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/indicaPess"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:hint="@string/txtEstimatedPess"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="40dp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="23dp"
+                    android:text="@string/txtAluVei"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17dp"
+                    android:layout_marginTop="4dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/indicaAluVei"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:hint="@string/txtValorAluVeic"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="50dp">
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--....................................-->
+        <!--lINEAR LAYOUT ENTRETENIMENTO/DIVERSÃO-->
+        <!--....................................-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/black"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/txtEntDiv"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-light">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="30dp"
+                    android:text="@string/txtEntDiv"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/indicaOutrosOne"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtDesc"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/indicaCustOutrosOne"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:hint="@string/txtEntreDiv"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/indicaOutrosTwo"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtDesc"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/indicaCustOutrosTwo"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:hint="@string/txtEntreDiv"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/indicaOutrosThree"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/txtDesc"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="5dp">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/indicaCustOutrosThree"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:hint="@string/txtEntreDiv"
+                    android:textColorHint="@color/black"
+                    android:singleLine="true"
+                    android:textSize="17dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="50dp">
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/vermelho"
+                android:text="@string/txtBack"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <!--BOTÃO QUE VAI GRAVAR NO BANCO DE DADOS-->
+            <Button
+                android:id="@+id/btnFinaliza"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/verde"
+                android:text="@string/txtFinish"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="15dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
